@@ -8,16 +8,12 @@ package:
 
 source:
   # Windows can't seem to use git option
-  if: win
-  then:
-    url: https://github.com/DavidMStraub/rundec-python/archive/db2ecffddcebc599a0e6394372353422f771922b.tar.gz
-    sha256: fa038a5e7128060fa1068f7717a32a3cc7bc6a9fc8c0be5020b6ec2f31790447
-  else:
-    git: https://github.com/DavidMStraub/rundec-python.git
-    # tag: ${{ version }}
-    # sha256: fa038a5e7128060fa1068f7717a32a3cc7bc6a9fc8c0be5020b6ec2f31790447
-    # Use exact commit as no tags for v0.5.1 or later (yet)
-    rev: "db2ecffddcebc599a0e6394372353422f771922b"
+  # git: https://github.com/DavidMStraub/rundec-python.git
+  # tag: ${{ version }}
+  # Use exact commit as no tags for v0.5.1 or later (yet)
+  # rev: "db2ecffddcebc599a0e6394372353422f771922b"
+  url: https://github.com/DavidMStraub/rundec-python/archive/db2ecffddcebc599a0e6394372353422f771922b.tar.gz
+  sha256: fa038a5e7128060fa1068f7717a32a3cc7bc6a9fc8c0be5020b6ec2f31790447
   patches: add-pyproject-toml-for-build-system.patch
 
 build:
