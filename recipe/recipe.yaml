@@ -7,13 +7,10 @@ package:
   version: ${{ version }}
 
 source:
-  # Windows can't seem to use git option
-  # git: https://github.com/DavidMStraub/rundec-python.git
+  git: https://github.com/DavidMStraub/rundec-python.git
   # tag: ${{ version }}
   # Use exact commit as no tags for v0.5.1 or later (yet)
-  # rev: "1b3006f03098ef4c6d44200ef643fede9c426cfe"
-  url: https://github.com/DavidMStraub/rundec-python/archive/1b3006f03098ef4c6d44200ef643fede9c426cfe.tar.gz
-  sha256: 2728d6989522fcff44ba488fb824bda5c74da6aff2d68e4c359769cf43c7cf4e
+  rev: "1b3006f03098ef4c6d44200ef643fede9c426cfe"
   patches: add-pyproject-toml-for-build-system.patch
 
 build:
