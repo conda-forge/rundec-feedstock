@@ -1,6 +1,6 @@
 context:
   name: "rundec"
-  version: "0.5.1"
+  version: "0.5.2"
 
 package:
   name: ${{ name|lower }}
@@ -11,9 +11,9 @@ source:
   # git: https://github.com/DavidMStraub/rundec-python.git
   # tag: ${{ version }}
   # Use exact commit as no tags for v0.5.1 or later (yet)
-  # rev: "db2ecffddcebc599a0e6394372353422f771922b"
-  url: https://github.com/DavidMStraub/rundec-python/archive/db2ecffddcebc599a0e6394372353422f771922b.tar.gz
-  sha256: fa038a5e7128060fa1068f7717a32a3cc7bc6a9fc8c0be5020b6ec2f31790447
+  # rev: "f22879245fc91dc25b6d2ba3c413dddf28fa8ad9"
+  url: https://github.com/DavidMStraub/rundec-python/archive/f22879245fc91dc25b6d2ba3c413dddf28fa8ad9.tar.gz
+  sha256: aec81fc7a88ebded71c1048cab27bbdeaf7d365612e275f46b21b2b5823e0814
   patches: add-pyproject-toml-for-build-system.patch
 
 build:
@@ -51,7 +51,7 @@ tests:
 about:
   homepage: https://github.com/DavidMStraub/rundec-python
   summary: 'Python wrapper around CRunDec'
-  license: GPL-3.0-or-later
+  license: MIT
   license_file: LICENSE
   repository: https://github.com/DavidMStraub/rundec-python
 

@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rundec-feedstoc
 
 Home: https://github.com/DavidMStraub/rundec-python
 
-Package license: GPL-3.0-or-later
+Package license: MIT
 
 Summary: Python wrapper around CRunDec
 
