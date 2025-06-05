@@ -1,6 +1,6 @@
 context:
   name: "rundec"
-  version: "0.5.2"
+  version: "0.6"
 
 package:
   name: ${{ name|lower }}
@@ -11,9 +11,9 @@ source:
   # git: https://github.com/DavidMStraub/rundec-python.git
   # tag: ${{ version }}
   # Use exact commit as no tags for v0.5.1 or later (yet)
-  # rev: "f22879245fc91dc25b6d2ba3c413dddf28fa8ad9"
-  url: https://github.com/DavidMStraub/rundec-python/archive/f22879245fc91dc25b6d2ba3c413dddf28fa8ad9.tar.gz
-  sha256: aec81fc7a88ebded71c1048cab27bbdeaf7d365612e275f46b21b2b5823e0814
+  # rev: "1b3006f03098ef4c6d44200ef643fede9c426cfe"
+  url: https://github.com/DavidMStraub/rundec-python/archive/1b3006f03098ef4c6d44200ef643fede9c426cfe.tar.gz
+  sha256: 2728d6989522fcff44ba488fb824bda5c74da6aff2d68e4c359769cf43c7cf4e
   patches: add-pyproject-toml-for-build-system.patch
 
 build:
